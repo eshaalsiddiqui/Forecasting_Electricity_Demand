@@ -32,6 +32,4 @@ The following regression models were implemented and compared:
 - **Random Forest Regressor** (`random_forest_forecast.py`)
 - **Gradient Boosting Regressor** (`gradient_boosting.py`)
 
-Each model was trained on the same set of features to predict future electricity demand. Model evaluation was based on metrics such as RMSE and R² scores.
-
----
+Each model was trained on the same set of features to predict future electricity demand. Model evaluation was based on metrics such as MAE, MSE and R² scores.
