@@ -19,7 +19,7 @@ Accurately forecasting electricity demand is critical for grid reliability, cost
 - **Columns:**
   - `date`: Date of observation (YYYY-MM-DD)
   - `hour`: Hour of the day (1 to 24)
-  - `hourly_demand`: Electricity demand in megawatts (MW)
+  - `hourly_demand`: Electricity demand in kilowatts (kW)
   - `hourly_average_price`: Average electricity price (in CAD) for the hour
 - **Data Types:**
   - `date`: String or datetime
