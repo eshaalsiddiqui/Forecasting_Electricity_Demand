@@ -15,11 +15,19 @@ Accurately forecasting electricity demand is critical for grid reliability, cost
 ## Dataset Description
 
 - **Source:** Historical electricity demand data from Ontario (file: `ontario_electricity_demand.csv`)
-- **Rows:** Varies (CSV format)
-- **Columns:** Includes timestamp and demand metrics
-- **Data Types:** Includes datetime objects and numeric values
+- **Rows:** Each row represents one hourly interval
+- **Columns:**
+  - `date`: Date of observation (YYYY-MM-DD)
+  - `hour`: Hour of the day (1 to 24)
+  - `hourly_demand`: Electricity demand in megawatts (MW)
+  - `hourly_average_price`: Average electricity price (in CAD) for the hour
+- **Data Types:**
+  - `date`: String or datetime
+  - `hour`: Integer
+  - `hourly_demand`: Integer
+  - `hourly_average_price`: Float
 
-The dataset is structured to support time-series forecasting, with demand measured over regular intervals. Exploratory data analysis and preprocessing were performed before model training.
+The dataset is designed for time-series forecasting. It captures hourly electricity demand and corresponding price, making it suitable for modeling consumption trends and predicting future demand using supervised learning techniques. Preprocessing steps included handling date-time features and normalizing/standardizing features where necessary.
 
 ---
 
