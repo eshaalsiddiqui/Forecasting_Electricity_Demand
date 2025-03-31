@@ -4,8 +4,6 @@
 
 The goal of this project is to apply various machine learning regression techniques to forecast electricity demand in Ontario. This project serves as a practical implementation of data-driven forecasting using real-world data and contributes to understanding model performance across different algorithms.
 
-**Submission Deadline:** March 31, 11:59 PM
-
 ---
 
 ## Problem Statement & Justification
