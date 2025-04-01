@@ -57,7 +57,7 @@ print("MAE:", mae)
 print("MSE:", mse)
 print("R² Score:", r2)
 
-# Plot
+# Plot: accuracy
 plt.figure(figsize=(6, 6))
 plt.scatter(y_test, preds_test, alpha=0.6)
 plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], '--', color='gray')
@@ -65,4 +65,17 @@ plt.xlabel("Actual Demand")
 plt.ylabel("Predicted Demand")
 plt.title("Gradient Boosting: Actual vs Predicted")
 plt.grid(True)
+plt.show()
+
+# Plot: actual vs predicted
+sample_size = 100
+plt.figure(figsize=(7, 5))
+plt.plot(y_test[:sample_size].values, label='Actual Demand')
+plt.plot(preds_test[:sample_size], label='Predicted Demand')
+plt.title("Actual vs Predicted Demand (Sample of 100)")
+plt.xlabel("Hour (Sample Index)")
+plt.ylabel("Electricity Demand")
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
 plt.show()
